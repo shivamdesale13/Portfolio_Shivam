@@ -1,0 +1,603 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+.skills-section {
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 30px 20px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+}
+
+.skill {
+  text-align: center;
+  max-width: 120px;
+}
+
+.skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.skill p {
+  margin: 0;
+  font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto Mono', monospace;
+  }
+  
+
+.profile-pic {
+    position: relative;
+    max-width:130px;
+    max-height:130px;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    margin: -31px; 
+    margin-left:-1px;
+    border: 1px solid rgba(13, 20, 19, 0.4); 
+    border-radius: 50% !important;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .social {
+    margin: 0 auto;
+    width: auto;
+    text-align: inherit;
+    /* padding: 10px; */
+  }
+  
+  .icon-btn {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 70px;
+    border-radius: 45px;
+    display: inline-block;
+    margin: 4px;
+  }
+  
+  .github {
+    color: black;
+  }
+  
+  .linkedin {
+    color: #0077b5;
+  }
+  
+  .icon-btn:hover {
+    transform: scale(1.10);
+    color: #2b2d42;
+  }
+  
+  .linkedin:hover {
+    background-color: #0077b5;
+  }
+  
+  .github:hover {
+    background-color: black;
+  }
+  
+  /* Buttons - Read Me, Contact Us */
+  
+  .readme {
+    position: relative;
+    padding: 11px 35px;
+    background: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  
+  .contactme {
+    position: relative;
+    padding: 11px 35px;
+    background: none;
+    color: #fff;
+    border: 2px solid #fff;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-top: 1.5em;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+  }
+  
+  .contactme:hover{
+    color: #000;
+    background-color: white;
+  }
+  /* main body */
+  
+  /* body-color */
+  
+  a {
+    color: #2b2d42;
+  }
+
+  /* main nav */
+  
+  nav {
+    color: #2b2d42;
+    box-shadow: none;
+    height: 0;
+  }
+  
+  nav i {
+    padding: 0 15px;
+    position: relative;
+    top: 5px;
+  }
+  
+  main {
+    background-color: #6c757d;
+    padding-left: 190px;
+  }
+  
+  dl {
+    margin-top: 0.5rem;
+  }
+  
+  dd {
+    display: inline-block;
+    font-weight: 500;
+    margin-left: 0;
+  }
+  
+  dt {
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+  
+  ul.side-nav {
+    width: 190px;
+  }
+  
+  ul.side-nav li {
+    padding: 0;
+  }
+
+  
+  ul.side-nav.fixed a {
+    box-sizing: content-box;
+    color: #2b2d42;
+    display: block;
+    line-height: 100%;
+    padding: 10px 0 12px;
+  }
+  
+  ul.table-of-contents li.logo a.active, ul.table-of-contents li.logo a:hover {
+    border: none;
+    font-weight: 200;
+  }
+  
+  ul.side-nav.fixed li.logo {
+    color: #2b2d42;
+    border-bottom: 1px solid #2b2d42;
+    box-sizing: content-box;
+    min-height: 90px;
+    padding: 30px 30px 40px;
+  }
+  
+  ul.side-nav.fixed li.logo a {
+    font-weight: 400;
+    line-height: 100%;
+  }
+  
+  ul.table-of-contents li:not(.logo) a.active, ul.table-of-contents li:not(.logo) a:hover {
+    background-color: #161414;
+    border-left: 5px solid #2b2d42;
+  }
+  
+  ul.side-nav.fixed.table-of-contents li:not(.logo) a span, ul#slide-out li:not(.logo) a span {
+    color: #2b2d42 !important;
+  }
+  
+  li.logo span {
+    display: block;
+    font-size: 14px;
+  }
+  
+  .brand-logo h1 {
+    font-size: inherit;
+    line-height: inherit;
+    margin: inherit;
+    font-weight: inherit;
+  }
+  
+  .container {
+    width: 95%;
+  }
+  
+  h3 {
+    font-weight: 200;
+    margin-bottom: 60px;
+    margin-top: 0;
+    padding: 30px 40px;
+    text-transform: uppercase;
+  }
+  
+  .section {
+    padding-bottom: 30px;
+    padding-top: 0;
+    position: relative;
+  }
+  
+  .full-height {
+    height: 100vh;
+  }
+  
+  #intro.section {
+    background: linear-gradient(to bottom, rgba(61, 59, 59, 0) 40%, rgb(9, 9, 9,1) 100%),
+                url("folder/bg.jpeg") no-repeat center center; 
+    background-size: cover;
+    position: relative;
+  }
+  
+  
+  #intro.section .container {
+    color: #fefae0;
+    font-weight: 200;
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+  
+  #intro.section .container *:not(span) {
+    font-weight: 500;
+    line-height: 150%;
+    text-shadow: 1px 1px 5px rgba(8, 7, 7, 0.5);
+  }
+  
+  #intro.section .underline {
+    border-bottom: 5px solid #22242e;
+  }
+  
+  #intro.section .teal {
+    padding: 0 10px;
+  }
+  
+  .overlay {
+    background-color: rgba(24, 20, 40, 0.4);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .waves-effect.waves-blue .waves-ripple {
+    background-color: #2b2d42;
+  }
+  
+  .card {
+    margin-bottom: 60px;
+  }
+  
+  .card .role {
+    font-size: 1.25rem;
+    position: absolute;
+    right: 38px;
+    top: 28px;
+  }
+  
+  .card li a {
+    margin-right: 0;
+    color: #333;
+    border-bottom: 2px solid #ffab40;
+  }
+  
+  .card li a:hover {
+    color: #2b2d42;
+    font-weight: 500;
+  }
+  
+  .card .card-content {
+    padding-bottom: 30px;
+  }
+  
+  .card .card-content p {
+    padding: 5px 0 0;
+  }
+  
+  .card h5 {
+    font-size: 1.5rem;
+    margin-bottom: -0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .card h6 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+  
+  #experience .card-action {
+    background-color: rgba(0, 0, 0, 0.02);
+    border: none;
+  }
+  
+  #experience .card .col.s12.m2 a {
+    display: block;
+  }
+  
+  #experience .card .col.s12.m2 a img {
+    max-height: 60px;
+  }
+  
+  .card-action span {
+    font-size: 85%;
+    color: #666;
+  }
+  
+  .card ul {
+    margin-bottom: 0;
+  }
+  
+  .card ul li {
+    line-height: 200%;
+    list-style-type: disc;
+    margin-left: 24px;
+  }
+  
+  .card ul li li {
+    color: #666;
+    font-size: 13px;
+  }
+  
+  .card .card-title {
+    font-size: 24px;
+  }
+  
+  .card .card-content .card-title {
+    line-height: 2.5rem;
+  }
+  
+  .card i.right {
+    margin-left: 10px;
+  }
+  
+  a.hoverline {
+    border-bottom: 3px solid transparent !important;
+    padding: 3px 3px 0 3px;
+    transition: 0.25s all;
+    -moz-transition: 0.25s all;
+    -webkit-transition: 0.25s all;
+  }
+  
+  
+  a.hoverline:hover {
+    border-bottom: 3px solid #2b2d42 !important;
+  }
+  
+  #skills .card.large {
+    height: 360px;
+  }
+  
+  #skills h4 {
+    border-bottom: 1px solid #2b2d42;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+  
+  #skills .col img.responsive-img {
+    display: flex;
+    margin: 0 auto;
+    max-height: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  .card.large .card-content p {
+    color: inherit;
+    margin: 0;
+    padding: 30px 0;
+  }
+  
+  #experience .card-content .row {
+    border-bottom: 1px solid #2b2d42;
+    padding-bottom: 10px;
+  }
+  
+  .card.large .card-image {
+    height: 230px;
+  }
+  
+  .card.large .card-content {
+    height: auto;
+  }
+  
+  .card.medium .card-image {
+    height: 240px;
+  }
+  
+  .card-action a.btn-floating {
+    margin-bottom: 0;
+  }
+  
+  #contact a:not(.btn-floating) {
+    bottom: 6px;
+    left: 20px;
+    position: relative;
+  }
+  
+  #experience .col.s12.m2 {
+    text-align: center;
+  }
+  
+  .fa-external-link:before {
+    left: 3px;
+    position: relative;
+    top: 2px;
+  }
+  
+  small {
+    display: none;
+  }
+  
+  .grey-text {
+    color: #666 !important;
+  }
+  
+  .teal-text {
+    color: #2b2d42 !important;
+  }
+  
+  
+  .teal {
+    background-color: #2b2d42 !important;
+  }
+  
+
+  @media (min-width: 1200px) {
+    #experience .container {
+      width: 860px;
+    }
+  }
+  
+  @media (max-width: 1360px) {
+    .card ul li {
+      font-size: 14px;
+      line-height: 200%;
+      margin-left: 20px;
+    }
+  }
+  
+  @media (max-width: 1160px) {
+    .card ul li {
+      line-height: 150%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    main {
+      padding-left: 0px;
+      padding-top: 64px;
+    }
+    ul.side-nav a {
+      line-height: 100%;
+      padding: 0;
+      width: 100%;
+    }
+    nav {
+      background: #6c757d;
+      height: 64px;
+      position: absolute;
+    }
+    nav a.button-collapse, nav a.button-collapse i {
+      color: #000;
+      height: 56px;
+      line-height: 56px;
+    }
+    h3 {
+      padding: 20px 30px;
+      margin-bottom: 40px;
+    }
+    .container {
+      margin: 0 auto;
+    }
+    nav.hide-on-large.only.trigger {
+      display: block;
+      position: fixed;
+      top: 0;
+      z-index: 2;
+    }
+    .name-title {
+      display: block;
+      height: 100%;
+      padding-top: 15px;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+    }
+    .name-title>span, .name-title>a {
+      position: relative;
+      line-height: 20px;
+    }
+    .name-title a {
+      font-size: 22px;
+      display: block;
+    }
+    .name-title span {
+      display: block;
+      font-size: 14px;
+    }
+    h3, .container {
+      position: relative;
+      top: 64px;
+    }
+    section#intro {
+      margin-bottom: -64px;
+    }
+    .card .role {
+      position: relative;
+      right: initial;
+      top: initial;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 22px;
+      line-height: 200%;
+      margin: 30px 0 0;
+    }
+    #intro.section .container *:not(span) {
+      padding: 0;
+    }
+    .card .card-content .card-title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    #experience span.card-title {
+      text-align: center;
+      display: block;
+    }
+    #experience span.card-title a {
+      margin: 0;
+    }
+    i.mdi-navigation-close.right {
+      position: relative;
+      bottom: 15px;
+    }
+    #contact a:not(.btn-floating) {
+      text-align: center;
+      display: block;
+      left: initial;
+      bottom: initial;
+    }
+    #contact a.btn-floating.btn-large {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+    }
+    #intro.section {
+      background-position-x: 30%;
+    }
+  }
